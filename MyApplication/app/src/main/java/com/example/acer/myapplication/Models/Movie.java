@@ -1,4 +1,4 @@
-package com.example.acer.myapplication.Activity;
+package com.example.acer.myapplication.Models;
 
 /**
  * Created by Lincoln on 15/01/16.

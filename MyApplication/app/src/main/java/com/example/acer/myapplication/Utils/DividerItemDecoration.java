@@ -1,4 +1,4 @@
-package com.example.acer.myapplication.Activity;
+package com.example.acer.myapplication.Utils;
 
 import android.content.Context;
 import android.content.res.TypedArray;
