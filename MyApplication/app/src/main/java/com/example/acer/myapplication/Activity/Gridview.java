@@ -10,6 +10,7 @@ import android.view.MenuItem;
 import android.widget.Toast;
 
 import com.example.acer.myapplication.Adapter.RecyclerViewAdapter;
+import com.example.acer.myapplication.Models.Biodata;
 import com.example.acer.myapplication.Models.ItemObject;
 import com.example.acer.myapplication.R;
 
@@ -35,7 +36,7 @@ public class Gridview extends Activity {
         topToolBar.setLogo(R.drawable.logo);
         topToolBar.setLogoDescription(getResources().getString(R.string.logo_desc));
 */
-        List<ItemObject> rowListItem = getAllItemList();
+        List<Biodata> rowListItem = getAllItemList();
         lLayout = new GridLayoutManager(Gridview.this, 4);
 
         RecyclerView rView = (RecyclerView)findViewById(R.id.recycler_view);
@@ -74,8 +75,9 @@ public class Gridview extends Activity {
         return super.onOptionsItemSelected(item);
     }
 */
-    private List<ItemObject> getAllItemList(){
+    private ArrayList<Biodata> getAllItemList(){
 
+        return  ListView.biodatalist;/*
         List<ItemObject> allItems = new ArrayList<ItemObject>();
         allItems.add(new ItemObject("United States", R.drawable.one));
         allItems.add(new ItemObject("Canada", R.drawable.two));
@@ -94,7 +96,7 @@ public class Gridview extends Activity {
         allItems.add(new ItemObject("Germany", R.drawable.seven));
         allItems.add(new ItemObject("Sweden", R.drawable.eight));
 
-        return allItems;
+        return allItems;*/
     }
 
 
