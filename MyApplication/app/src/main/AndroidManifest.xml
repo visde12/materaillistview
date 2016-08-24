@@ -18,6 +18,13 @@
         </activity>
         <activity android:name=".Activity.Gridview"/>
         <activity android:name=".Activity.ListView"/>
+        <service android:name=".service.Sampleservice"
+
+            android:permission="android.permission.BIND_CHOOSER_TARGET_SERVICE">
+            <intent-filter>
+                <action android:name="android.service.chooser.ChooserTargetService" />
+            </intent-filter>
+        </service>
     </application>
 
 </manifest>

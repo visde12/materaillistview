@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.example.acer.myapplication.R;
+import com.example.acer.myapplication.service.Sampleservice;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -26,5 +27,13 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    public void shareitem(View v){
+
+        Intent sharingIntent = new Intent(android.content.Intent.ACTION_SEND);
+        sharingIntent.setType("text/plain");
+        sharingIntent.putExtra(android.content.Intent.EXTRA_TEXT,"Helloo ");
+        startActivity(Intent.createChooser(sharingIntent, " Please select the app you want to share"));
+
+    }
 
 }
